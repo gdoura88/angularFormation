@@ -1,0 +1,7 @@
+<app-fils [filsProperty]="color" (sendRequestToData)="processReq($event)"></app-fils><!--ici fils voit property du parent-->
+<div [style.backgroundColor]="color">
+  color
+</div>
+<!-- <input #inputColor (change)="changeColor(inputColor)" type="text"> -->
+<input [(ngModel)]="color" type="text">
+tapez color ici =  {{color}}
